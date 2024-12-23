@@ -66,10 +66,36 @@
 <br>
 
 # { Expression in JSX }
+
 > With JSX you can write expressions inside curly braces. the expressions can be react variables, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result.
+>
 > ```
 > const App = () => {
 >    return <p>2 + 2 = {4+4}<p>
->}
+> }
 > will return a <p> element with the innerText value as '2 + 2 = 8'
->```
+> ```
+
+<br>
+<br>
+
+# Inline style
+
+> - no spaces in stype names.
+> - only use camelCase.
+> - styles are provided as string values to style tags keys.
+> - A variable can also be used which will be an object with the same structure as the one passed in style prop.
+>
+> ```
+> const App = () => {
+>    return (
+>          <section>
+>              <h1 style={
+>                  {color:'white',
+>                  backgroundColor: 'teal',
+>                   padding:'2rem'}}>
+>              </h1>
+>          </section>
+>    )
+> }
+> ```
