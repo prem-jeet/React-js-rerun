@@ -21,9 +21,15 @@
 > React Desktop -> Desktop<br>
 > React 360 -> VR
 
+<br>
+<br>
+
 # Componets
 
 > Components are independent and reusable bits of code. They serve the same purpose as JS funcitons but work in isolation and return HTML.
+
+<br>
+<br>
 
 # JSX (Js XML)
 
@@ -55,3 +61,15 @@
 > - Unlike HTML, in JSX `every tag must be closed`.
 >
 > - In JSX to assign class to an element we use `className` keyword instead of the class keyword as the class keyword conflicts with the class keyword of Javascript. Similary other keywords that clash with some attributes of HTML like `for` for label tag is written as `htmlFor` in JSX or it will clash with the for loop keyword of Javascript.
+
+<br>
+<br>
+
+# { Expression in JSX }
+> With JSX you can write expressions inside curly braces. the expressions can be react variables, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result.
+> ```
+> const App = () => {
+>    return <p>2 + 2 = {4+4}<p>
+>}
+> will return a <p> element with the innerText value as '2 + 2 = 8'
+>```
