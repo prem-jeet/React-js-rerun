@@ -24,3 +24,34 @@
 # Componets
 
 > Components are independent and reusable bits of code. They serve the same purpose as JS funcitons but work in isolation and return HTML.
+
+# JSX (Js XML)
+
+> JSX allows us to write HTML in Ract. JSX makes it easier to write & add HTML in React.<br>
+> The HTML looking syntax in the jsx file is not HTML ,it got converted to JS by the compiler like Babel then it gets injected into the DOM where it gets conveerted to actual HTML.
+>
+> - JSX must return only one HTML root (we can use empty tag to return multiple roots <br>`empty tag  <></>`).
+>
+> ```
+> ✅
+> fucntion <compoent name>({destructured props}){
+>    return (
+>        <div>
+>            <p>Hello</p>
+>            <p>World</p>
+>        </div>
+>    )
+> }
+>
+> ❌
+> fucntion <compoent name>({destructured props}){
+>    return (
+>            <p>Hello</p>
+>            <p>World</p>
+>    )
+> }
+> ```
+>
+> - Unlike HTML, in JSX `every tag must be closed`.
+>
+> - In JSX to assign class to an element we use `className` keyword instead of the class keyword as the class keyword conflicts with the class keyword of Javascript. Similary other keywords that clash with some attributes of HTML like `for` for label tag is written as `htmlFor` in JSX or it will clash with the for loop keyword of Javascript.
